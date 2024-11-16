@@ -30,14 +30,14 @@ The dataset consists of three main tables – Sales, Property, and Expense – w
 | ExpenseType      | Type or category of the expense (maintenance, property taxes, renovation).                                |
 | Amount           | Amount of the expense.                                                                                    |
 
-## Key Analysis Questions
+## Key Analysis Insights
 1. Yearly Financial Overview and Property Sales
-2. Top 3 Months by Revenue in 2024
-3. Distribution of Sales by Means of Sale
-4. Comparison of Payment Status by Sale Method
-5. Revenue by Property Type and Year
-6. Months with Revenue Smaller than the Yearly Average
-7. Percentage of Sold Properties and Net Income by Price Category
+2. Months with Repeated Top 3 Revenue for Each Year
+3. Months with Repeated Revenue Below the Yearly Average
+4. Revenue by Property Type and Year
+5. Percentage of Sold Properties and Net Income by Price Category
+6. Frequency of Sales by Means of Sale
+7. Comparison of Payment Status by Means of Sale
 8. Total Expenses by Property Type and Expense Category
 
 ## Requirements
