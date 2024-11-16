@@ -44,6 +44,9 @@ The dataset consists of three main tables – Sales, Property, and Expense – w
 - **SQL** (BigQuey and SQLite) : For performing analytical queries on the data.
 - **PowerBI**: For create interactive visualizations for better decision-making.
 
+##Visualization 
+[PowerBI](https://app.powerbi.com/view?r=eyJrIjoiOWI5ODIzZTUtNjBlYi00N2I4LTg2OTctMTNkMGM3ZTM4YWU4IiwidCI6ImM3NTk5NWEzLWY1YjctNDkyMy1hM2IyLWZjMTg3NzM5M2MxZiIsImMiOjEwfQ%3D%3D)
+
 ---
 
 > LinkedIn [profile](https://www.linkedin.com/in/e-rena/)<br>
