@@ -1,5 +1,5 @@
 # Real Estate Property Management Analysis Using SQL and PowerBI
-This project provides an in-depth analysis of a real estate property management dataset using SQL and PowerBI. The goal is to derive actionable business insights for property management, sales performance, and expense monitoring, helping stakeholders make informed decisions.
+Real estate property management data analysis is essential for property owners, managers, and investors to evaluate the performance of their properties, track occupancy rates, rental income, operating costs, and analyze market trends. By analyzing this data, stakeholders can make more strategic decisions regarding property acquisition, rent pricing, maintenance, and investment planning, which can ultimately improve operational efficiency and maximize profitability.
 
 ## Dataset Details
 The dataset consists of three main tables – Sales, Property, and Expense – which are linked by the `PropertyID` column. This relationship connects sales transactions and expenses to specific properties.
