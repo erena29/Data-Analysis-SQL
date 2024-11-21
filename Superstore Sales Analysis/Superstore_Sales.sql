@@ -1,5 +1,5 @@
 SELECT *
-FROM supermarket.sales;
+FROM superstore.sales;
 
 -- Total Transactions Each Month  
 WITH month_trans AS(
@@ -11,7 +11,7 @@ WITH month_trans AS(
       SELECT 
         Order_ID,
         Order_Date
-      FROM supermarket.sales
+      FROM superstore.sales
       GROUP BY Order_ID,Order_Date)
   GROUP BY Year,Month)
 
@@ -27,7 +27,7 @@ ORDER BY Month
 SELECT 
   Order_ID,
   ROUND(SUM(Price),2) AS Total_Amount
-FROM supermarket.sales
+FROM superstore.sales
 GROUP BY Order_ID
 ORDER BY Total_Amount DESC
 LIMIT 5;
@@ -43,7 +43,7 @@ WITH Rank_Product AS (
       Sub_Category,
       Category, 
       SUM(Quantity) AS Total_Product
-    FROM supermarket.sales
+    FROM superstore.sales
     GROUP BY Product_Name, Sub_Category, Category
   )AS ProductSummary
   ORDER BY Product_Rank
@@ -71,7 +71,7 @@ WITH Rank_Product AS (
       Sub_Category,
       Product_Name,
       SUM(Quantity) AS Total_Sales
-    FROM supermarket.sales
+    FROM superstore.sales
     GROUP BY Sub_Category,Product_Name)
 )
 
@@ -92,7 +92,7 @@ WITH Rank_Product AS (
       Order_ID,
       Product_Name,
       SUM(Quantity) AS Total_Order
-    FROM supermarket.sales
+    FROM superstore.sales
     GROUP BY Order_ID, Product_Name
   ) AS Subquery
   GROUP BY Product_Name
@@ -116,7 +116,7 @@ WITH Rank_Sub_Category AS (
         EXTRACT(YEAR FROM Order_Date) AS Year,
         Sub_Category,
         ROUND(SUM(Profit), 2) AS Total_Profit
-      FROM supermarket.sales
+      FROM superstore.sales
       GROUP BY Year,Sub_Category)
 )
 
@@ -133,7 +133,7 @@ SELECT
   EXTRACT(YEAR FROM Order_Date) AS Year,
   Sub_Category,
   ROUND(SUM(Profit), 2) AS Total_Profit
-FROM supermarket.sales
+FROM superstore.sales
 GROUP BY Sub_Category,Year
 HAVING SUM(Profit) < 0
 ORDER BY Year;
@@ -146,7 +146,7 @@ FROM (
     State,
     SUM(CASE WHEN EXTRACT(YEAR FROM Order_Date) = 2019 THEN Profit ELSE 0 END) AS Profit_2019,
     SUM(CASE WHEN EXTRACT(YEAR FROM Order_Date) = 2020 THEN Profit ELSE 0 END) AS Profit_2020
-  FROM supermarket.sales
+  FROM superstore.sales
   GROUP BY State
 )
 WHERE Profit_2019>Profit_2020
@@ -156,7 +156,7 @@ WITH profit_state AS(
   SELECT 
     State,
     ROUND(SUM(Profit),2) AS Total_Profit
-  FROM supermarket.sales
+  FROM superstore.sales
   GROUP BY State
   ORDER BY Total_Profit DESC
 )
@@ -169,7 +169,7 @@ WHERE Total_Profit<(SELECT AVG(Total_Profit) FROM profit_state)
 SELECT
   Payment_Mode,
   ROUND((COUNT(CASE WHEN Returns = TRUE THEN 1 END) * 100.0) / COUNT(*),2) AS Return_Rate
-FROM supermarket.sales
+FROM superstore.sales
 GROUP BY Payment_Mode
 ORDER BY Return_Rate DESC
 
@@ -177,7 +177,7 @@ ORDER BY Return_Rate DESC
 SELECT
   EXTRACT(DAY FROM (Ship_Date-Order_Date)) AS Days_to_Ship,
   Count(*) AS Total
-FROM supermarket.sales
+FROM superstore.sales
 GROUP BY Days_to_Ship
 ORDER BY Days_to_Ship
 
