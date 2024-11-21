@@ -1,5 +1,7 @@
-# Supermarket Sales Analysis Using SQL and PowerBI
-This project provides an in-depth analysis of a real estate property management dataset using SQL and PowerBI. The goal is to derive actionable business insights for property management, sales performance, and expense monitoring, helping stakeholders make informed decisions.
+# Superstore Sales Analysis Using SQL and PowerBI
+Superstore sales refer to data related to the sales activity and performance of large retail stores that stock a wide range of products and merchandise. These stores are typically known for having a diverse inventory, competitive pricing, and providing a comprehensive shopping experience.
+
+Analysis of superstore sales data is crucial for owners, managers, and analysts to disseminate store performance, identify market trends, and make more strategic business decisions.
 
 ## Dataset Details
 
@@ -18,8 +20,8 @@ This project provides an in-depth analysis of a real estate property management 
 | Price            | The unit price of the product.                                             |
 | Quantity         | The number of units purchased in the order.                                |
 | Profit           | The profit earned from the order.                                          |
-| Returns          | Indicates whether the product was returned (e.g., Yes/No).                |
-| Payment_Mode     | The mode of payment used (e.g., Credit Card, Cash, Online Payment).        |
+| Returns          | Indicates whether the product was returned (Yes/No).                |
+| Payment_Mode     | The mode of payment used (Credit Card, Cash, Online).        |
 
 
 ## Key Analysis Insights
