@@ -5,23 +5,22 @@ Analysis of superstore sales data is crucial for owners, managers, and analysts 
 
 ## Dataset Details
 
-
-| Column Name      | Description                                                                 |
-|------------------|-----------------------------------------------------------------------------|
+| Column Name      | Description                                                                |
+|------------------|----------------------------------------------------------------------------|
 | Order_ID         | Unique identifier for each order.                                          |
 | Order_Date       | The date when the order was placed.                                        |
 | Ship_Date        | The date when the order was shipped to the customer.                       |
 | City             | The city where the order was shipped.                                      |
 | State            | The state where the order was shipped.                                     |
 | Product_ID       | Unique identifier for each product.                                        |
-| Category         | The category of the product (e.g., Furniture, Technology, Office Supplies).|
-| Sub_Category     | Sub-category of the product (e.g., Chairs, Phones, Binders).              |
+| Category         | The category of the product (Furniture, Technology, Office Supplies).      |
+| Sub_Category     | Sub-category of the product (e.g., Accessories, Phones, Binders).          |
 | Product_Name     | The name of the product.                                                   |
 | Price            | The unit price of the product.                                             |
 | Quantity         | The number of units purchased in the order.                                |
 | Profit           | The profit earned from the order.                                          |
-| Returns          | Indicates whether the product was returned (Yes/No).                |
-| Payment_Mode     | The mode of payment used (Credit Card, Cash, Online).        |
+| Returns          | Indicates whether the product was returned (Yes/No).                       |
+| Payment_Mode     | The mode of payment used (Credit Card, Cash, Online).                      |
 
 
 ## Key Analysis Insights
