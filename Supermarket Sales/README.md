@@ -1,4 +1,4 @@
-# Real Estate Property Management Data Analysis Using SQL and PowerBI
+# Supermarket Sales Analysis Using SQL and PowerBI
 This project provides an in-depth analysis of a real estate property management dataset using SQL and PowerBI. The goal is to derive actionable business insights for property management, sales performance, and expense monitoring, helping stakeholders make informed decisions.
 
 ## Dataset Details
